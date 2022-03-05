@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Test your packages in a test environment: https://github.com/chocolatey/chocolatey-test-environment -->
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>pyoxidizer</id>
+    <version>0.18.0</version>
+    <packageSourceUrl>https://github.com/indygreg/PyOxidizer</packageSourceUrl>
+    <owners>ErichDonGubler</owners>
+
+    <title>pyoxidizer (Install)</title>
+    <authors>indygreg</authors>
+    <projectUrl>https://github.com/indygreg/PyOxidizer</projectUrl>
+    <copyright>2022</copyright>
+    <licenseUrl>https://raw.githubusercontent.com/indygreg/PyOxidizer/pyoxidizer/0.18.0/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/indygreg/PyOxidizer</projectSourceUrl>
+    <!-- TODO: How to pin specific docs version? -->
+    <docsUrl>https://pyoxidizer.readthedocs.io/en/latest/</docsUrl>
+    <bugTrackerUrl>https://github.com/indygreg/PyOxidizer/issues</bugTrackerUrl>
+    <tags>pyoxidizer SPACE_SEPARATED</tags>
+    <summary>A modern Python application packaging and distribution tool</summary>
+    <description>A modern Python application packaging and distribution tool</description>
+
+    <dependencies>
+      <dependency id="chocolatey-core.extension" version="1.1.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
